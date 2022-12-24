@@ -46,7 +46,7 @@ P.S. this is all in the terminal.
 
 
 ## Android
-Sorry for the 
+Sorry for the odd aspect ratio, it's a long story*
 
 1. Install [Pydroid 3](https://play.google.com/store/apps/details?id=ru.iiec.pydroid3), **and** the [Pydroid repository plugin](https://play.google.com/store/apps/details?id=ru.iiec.pydroid3.quickinstallrepo) from the Google Play Store
 
@@ -67,10 +67,13 @@ Sorry for the
 5. Click the back arrow, then copy the code from [here](https://raw.githubusercontent.com/askiiart/simco-construction-calc/master/main.py). Paste the code into Pydroid 3, then click the run button in the bottom right.
 
 
-# iOS
+## iOS
 Try [Pyto](https://apps.apple.com/us/app/pyto-python-3/id1436650069). I can't provide detailed instructions because:
 
 1. I don't have any iPhones or iPads that are new enough to run this (iOS 14 is required)
 2. I don't want to deal with it.
 
 You could also run this in a Jupyter notebook on Google Colab, but that would be tricky because it's a Jupyter notebook, and so isn't very interactive. Feel free to fork this and make a Colab version, though. Or maybe I'll make a Colab version, but don't count on it.
+
+
+*I'm running this on Android-x86 in a virtual machine. Android-x86 is a project that allows Android to run on desktop computer hardware, and a virtual machine is a virtual computer.
