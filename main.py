@@ -64,6 +64,7 @@ while running:
     i = int(input('Enter the number corresponding to the building:\n')) - 1
     current_level = int(input('What is the current level of the building? Enter 0 if it is not built yet.\n'))
     target_level = int(input('What is the target level of the building?\n'))
+    duplicate_buildings = int(input('How many identical buildings do you have to this one? (1 if this building is unique, 2 if there are 2 buildings like this, etc.)\n'))
     print()
 
     for j in range(current_level, target_level):
@@ -71,10 +72,10 @@ while running:
             temp = 1
         else:
             temp = j
-        total[0] += int(buildings[buildings_keys[i]][3]) * temp
-        total[1] += int(buildings[buildings_keys[i]][4]) * temp
-        total[2] += int(buildings[buildings_keys[i]][5]) * temp
-        total[3] += int(buildings[buildings_keys[i]][6]) * temp
+        total[0] += int(buildings[buildings_keys[i]][3]) * temp * duplicate_buildings
+        total[1] += int(buildings[buildings_keys[i]][4]) * temp * duplicate_buildings
+        total[2] += int(buildings[buildings_keys[i]][5]) * temp * duplicate_buildings
+        total[3] += int(buildings[buildings_keys[i]][6]) * temp * duplicate_buildings
     
     print('Would you like to upgrade another building? (y/N)')
     if input().lower() != 'y':
